@@ -1,10 +1,23 @@
-const router = require('express').Router();
+const router = require("express").Router();
 
 const {
-    getUsers,
-  } = require('../../controllers/userController');
+  getUsers,
+  createUser,
+  getSingleUser,
+  deleteUser,
+  updateUser,
+  addFriend,
+  removeFriend
+} = require("../../controllers/userController");
 
-  // /api/students
-router.route('/').get(getUsers)
+router.route("/").get(getUsers).post(createUser);
+
+router
+  .route("/:userId")
+  .get(getSingleUser)
+  .put(updateUser)
+  .delete(deleteUser);
+
+router.route("/:userId/friends/:friendId").post(addFriend).delete(removeFriend)
 
 module.exports = router;
