@@ -1,5 +1,5 @@
 const { Schema, model } = require("mongoose");
-const validator = require('validator')
+const validator = require("validator");
 
 const userSchema = new Schema(
   {
@@ -36,11 +36,9 @@ const userSchema = new Schema(
   }
 );
 
-userSchema
-  .virtual('friendCount')
-  .get(function () {
-    return this.friends.length;
-  });
+userSchema.virtual("friendCount").get(function () {
+  return this.friends.length;
+});
 
 const User = model("user", userSchema);
 
