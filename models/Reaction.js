@@ -1,4 +1,5 @@
 const { Schema, Types } = require("mongoose");
+const moment = require('moment')
 
 const reactionSchema = new Schema(
   {
@@ -18,6 +19,7 @@ const reactionSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
+      get: formatDate
     },
   },
   {
@@ -27,5 +29,9 @@ const reactionSchema = new Schema(
     _id: false,
   }
 );
+
+function formatDate(date) {
+  return moment(date).format('DD/MM/YY HH:mm')
+}
 
 module.exports = reactionSchema;
