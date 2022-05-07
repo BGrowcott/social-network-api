@@ -62,6 +62,7 @@ GET a single user route will return:
 ### User Routes
 
 #### Create a User
+----
 ```
 POST localhost:3001/api/users
 ```
@@ -72,18 +73,21 @@ Example body:
     "email": "bigpooh@fakemail.com"
 }
 ```
-
+----
 #### View all Users
+----
 ```
 GET localhost:3001/api/users
 ```
-
+----
 #### View a single User
+----
 ```
 GET localhost:3001/api/users/:userId
 ```
-
+----
 #### Update a User
+----
 ```
 PUT localhost:3001/api/users/:userId
 ```
@@ -93,24 +97,29 @@ Example body:
     "email": "bigpoohbear@fakemail.com"
 }
 ```
-
+----
 #### Delete a User
+----
 ```
 DELETE localhost:3001/api/users/:userId
 ```
-
+----
 #### Add a Friend
+----
 ```
 POST localhost:3001/api/users/:userId/friends/:friendId
 ```
-
+----
 #### Remove a Friend
+----
 ```
 DELETE localhost:3001/api/users/:userId/friends/:friendId
 ```
+----
 ### Thought Routes
 
 #### Create a Thought
+----
 ```
 POST localhost:3001/api/thoughts
 ```
@@ -122,18 +131,21 @@ Example body:
   "userId": "5edff358a0fcb779aa7b118b"
 }
 ```
-
+----
 #### View all Thoughts
+----
 ```
 GET localhost:3001/api/thoughts
 ```
-
+----
 #### View a single thought
+----
 ```
 GET localhost:3001/api/thoughts/:thoughtId
 ```
-
+----
 #### Update a thought
+----
 ```
 PUT localhost:3001/api/thoughts/:thoughtId
 ```
@@ -143,13 +155,15 @@ Example body:
     "thoughtText": "I'm thinking this thought in a slightly different way"
 }
 ```
-
+----
 #### Delete a thought
+----
 ```
 DELETE localhost:3001/api/thoughts/:thoughtId
 ```
-
+----
 #### Add a Reaction
+----
 ```
 POST localhost:3001/api/thoughts/:thoughtId/reactions
 ```
@@ -160,8 +174,9 @@ Example Body:
 	"username": "Big Pooh Bear"
 }
 ```
-
+----
 #### Remove a Reaction
+----
 ```
 DELETE localhost:3001/api/thoughts/:thoughtId/reactions
 ```
@@ -171,7 +186,7 @@ Example Body:
 	"reactionId": "6274f3cff718b019823eb4ed"
 }
 ```
-
+----
 ## Video Demonstration
 
 Please check out this video of the application in action - [Video](https://drive.google.com/file/d/1I6EoNT0bzGs55Np82MOdgkLZ_SJsaRZ-/view?usp=sharing)
