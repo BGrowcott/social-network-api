@@ -1,3 +1,4 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Social Network API
 
 Simply an API for a social network - made using Express, Mongo and Mongoose.
