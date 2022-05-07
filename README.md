@@ -8,6 +8,7 @@ Simply an API for a social network - made using Express, Mongo and Mongoose.
 1. [Description](#description)
 1. [Installation](#installation)
 2. [Usage](#usage)
+3. [Video Demo](#video-demonstration)
 3. [License](#license)
 4. [Contributing](#contributing)
 5. [Questions](#questions)
